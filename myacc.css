@@ -1,0 +1,125 @@
+.container
+{
+    height: auto;
+    width:98vw;
+    margin-bottom: 10px;
+
+}
+.header
+{
+    width:100%;
+    height:10%;
+    background-color: aqua;
+    border-radius: 10px ;
+}
+.acc
+{
+    font-size: 25px;
+}
+.accName
+{
+     font-size: 25px;
+     width:220px;
+}
+.accImage
+{
+    border-radius: 50%;
+}
+.accDetails
+{
+    width:100%;
+    height:auto;
+    background-color: #ffe3e3;
+    border-radius:20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+     /* flexbox details */
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-flow: wrap;
+
+}
+.box
+{
+    width:400px;
+    height: 200px;
+   background-color: #ffe3e3;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+  .card {
+            height: 200px;
+            width: 400px;
+            border-radius: 50px;
+           
+        }
+     .card:hover {
+          transform: scale(1.1);
+  box-shadow: 0 0 11px rgba(33,33,33,.8); 
+     }
+
+        .cardInfo {
+            display: grid;
+            width: 100%;
+            height: 100%;
+
+            grid-template-columns: 0.6fr 1fr;
+            grid-template-rows: 0.6fr 1fr;
+            grid-template-areas: 'ci cn'
+                'ci cd';
+        }
+
+        .cardImg {
+            padding-top: 10px;
+            grid-area: ci;
+        }
+
+        .cardName {
+
+            grid-area: cn;
+            text-align: center;
+            font-size: 30px;
+
+
+        }
+
+        .cardDescription {
+
+            grid-area: cd;
+            text-align: center;
+            color: rgb(59, 59, 59);
+            font-size: 20px;
+        }
+
+       .modifyBtn
+        {
+            background-color: blue;
+        }
+
+@media screen and (max-width:500px){
+    .acc{
+ font-size: 20px;
+    }
+    .accName
+    {
+ font-size: 20px;
+    width:170px;
+    }
+    .box{
+        width:300px;
+        height: 150px;
+    }
+    .card{
+        width:300px;
+        height: 150px;
+    }
+}
+
+
+
+
+
