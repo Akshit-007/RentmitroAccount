@@ -12,14 +12,14 @@
     background-color: aqua;
     border-radius: 10px ;
 }
-.acc
-{
-    font-size: 25px;
-}
 .accName
 {
-     font-size: 25px;
-     width:220px;
+    background-color: aqua;
+    width:80%;
+    font-size: 30px;
+}
+.notifications{
+    margin-top: 10px;
 }
 .accImage
 {
@@ -99,15 +99,101 @@
         {
             background-color: blue;
         }
+        .visit_btn
+        {
+            margin-left: 50px;
+        }
+
+
+
+
+#extend_myInfo
+{
+  display: none;
+}
+#extend_order
+{
+    display: none;
+}
+#extend_address
+{
+  display: none;
+}
+
+/* Extended info */
+
+label
+{
+    font-size: 20px;
+}
+input{
+    border:none;
+}
+input:focus
+{
+    border: none ;
+
+    border-bottom: 2px solid red;
+}
+.save
+{
+    font-size: 20px;
+    width: 100px;
+    background-color: white;
+    border:1px solid green;
+    color:green;
+    padding:5px 10px;
+     border-top-left-radius: 30px;
+     border-bottom-left-radius: 30px;
+      border-top-right-radius: 30px;
+     border-bottom-right-radius: 30px;
+}
+.save:hover{
+    background-color: #6ad26a;
+    color:white;
+}
+.head{
+    background-color: #00266b;
+    font-size: 40px;
+    color:white;
+    width:90vw;
+    height:60px;
+    border-left: 10px solid red;
+    padding-left: 20px ;
+}
+.edit_form{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40%;
+    text-align: justify;
+    background-color: #beffee;
+    width:90vw;
+}
+
+/*  address css */
+#extend_address{
+    background: linear-gradient(to right,rgba(23, 241, 248, 0.459),#fffdfd9a, #f707af4b);
+}
+.heading
+{
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: center;
+}
+@media screen and (max-width:950px){
+    .edit_form
+    {
+        padding-left: 20%;
+    }
+}
 
 @media screen and (max-width:500px){
-    .acc{
- font-size: 20px;
+    .accName{
+        font-size: 15px;
     }
-    .accName
+    .signOut
     {
- font-size: 20px;
-    width:170px;
+        width:50%;
     }
     .box{
         width:300px;
@@ -117,9 +203,8 @@
         width:300px;
         height: 150px;
     }
+    .edit_form
+    {
+        padding-left: 20%;
+    }
 }
-
-
-
-
-
