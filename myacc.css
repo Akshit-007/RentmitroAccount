@@ -1,3 +1,4 @@
+
 .container
 {
     height: auto;
@@ -110,6 +111,7 @@
 #extend_myInfo
 {
   display: none;
+
 }
 #extend_order
 {
@@ -121,19 +123,44 @@
 }
 
 /* Extended info */
-
-label
+.basicInfo , .contactInfo
 {
-    font-size: 20px;
-}
-input{
-    border:none;
-}
-input:focus
-{
-    border: none ;
+    margin-top: 30px;
+    margin-left: 25%;
+    width:40%;
+    background-color: white;
+    /* border:1px solid black; */
+    border-radius: 30px;
+    padding: 30px 20px;
+     box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
 
-    border-bottom: 2px solid red;
+    
+}
+
+.infoQuestion
+{
+    display: inline; 
+    font-weight: 600;
+}
+.infoAns
+{
+    color: #888888f7;
+    float: right;
+    width: 300px;
+
+}
+
+.edit
+{
+    margin-left: 400px;
+    margin-bottom:50px ;
 }
 .save
 {
@@ -149,11 +176,32 @@ input:focus
      border-bottom-right-radius: 30px;
 }
 .save:hover{
-    background-color: #6ad26a;
+    background-color: green;
     color:white;
 }
+#editButton{
+    width: 6em;
+    color:#0d6efd;
+    background: white;
+    border-radius: 5px;
+}
+.editLink {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #0d6efd;
+
+    color: #0d6efd;
+}
+.editLink:hover {
+    color: white;
+    background-color: #0d6efd;
+}
 .head{
-    background-color: #00266b;
+    background-color: #647189;
     font-size: 40px;
     color:white;
     width:90vw;
@@ -161,14 +209,7 @@ input:focus
     border-left: 10px solid red;
     padding-left: 20px ;
 }
-.edit_form{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 40%;
-    text-align: justify;
-    background-color: #beffee;
-    width:90vw;
-}
+
 
 /*  address css */
 #extend_address{
@@ -180,10 +221,29 @@ input:focus
     font-weight: bolder;
     text-align: center;
 }
-@media screen and (max-width:950px){
-    .edit_form
+
+@media screen and (max-width:1080px){
+    .infoAns{
+        width: 200px;
+    }
+    .edit
     {
-        padding-left: 20%;
+        margin-left: 300px;
+    }
+}
+@media screen and (max-width:880px){
+    .infoAns{
+       
+        float: none;
+    }
+     .edit
+    {
+        margin-left:50px;
+    }
+    .basicInfo , .contactInfo
+    {
+        width: 70%;
+        margin-left: 5%;
     }
 }
 
